@@ -1,0 +1,20 @@
+.choose_file{
+    position:relative;
+     
+    border-radius:8px;
+
+    width:250px; 
+    padding: 4px 6px 4px 8px;
+    color: #7f7f7f;
+    
+    background:white
+}
+.choose_file input[type="file"]{
+    -webkit-appearance:none; 
+    position:absolute;
+    top:0; left:0;
+    
+}
+.sbmt{
+    margin-left:15%;
+}

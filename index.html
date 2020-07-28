@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Purple Admin</title>
+    <title>General-info</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="./css/materialdesignicons.min.css">
     <link rel="stylesheet" href="./css/vendor.bundle.base.css">
@@ -15,6 +15,7 @@
     <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="index.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="./images/favicon.png" />
     
@@ -63,20 +64,56 @@
 
                       
                     </form>
-                  </div>
-                </div>
-              </div>
+                
+               
               
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           
           <!-- partial -->
+        
+      
+      
+    
+   
+
+     
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        
+    <div class="row">
+      <div class="col-md-3">
+      <p id="date"></p>
+  </div>
+  <div class="col-md-9">
+        <div class="choose_file">
+          <input type="file" name="fileToUpload" id="fileToUpload">
+          </div>
+          </div>
+          </div>
+         <button type="submit" value="Submit" class="sbmt" onClick="Submit">Submit</button>
+          </form>
         </div>
-        <!-- main-panel ends -->
+        </div>
       </div>
-      <!-- page-body-wrapper ends -->
     </div>
-    <!-- container-scroller -->
+  </div>
+
+    <!-- main-panel ends -->
+</div>
+
+      <!-- page-body-wrapper ends -->
+  </div>
+
+   <!-- container-scroller -->
+</div>
+  
+  
+          <script>
+             var nowDate = new Date(); 
+var date = nowDate.getDate()+'/'+(nowDate.getMonth()+1)+'/'+nowDate.getFullYear(); 
+              document.getElementById("date").innerHTML = date;
+              </script>
+  
     <!-- plugins:js -->
     <script src="./js/vendor.bundle.base.js"></script>
     <!-- endinject -->
